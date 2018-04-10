@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../minilibx/mlx.h
+
+/Users/vvoytenk/CLionProjects/fractol/fractol.c
+fractol.h
+/Users/vvoytenk/CLionProjects/fractol/fractol.h
+
+/Users/vvoytenk/CLionProjects/fractol/fractol.h
+mlx.h
+/Users/vvoytenk/CLionProjects/fractol/mlx.h
+libft/libft.h
+/Users/vvoytenk/CLionProjects/fractol/libft/libft.h
+stdlib.h
+-
+math.h
+-
+stdio.h
+-
+
+/Users/vvoytenk/CLionProjects/fractol/libft/libft.h
+stdlib.h
+-
+string.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+unistd.h
+-
+
+/Users/vvoytenk/CLionProjects/fractol/main.c
+fractol.h
+/Users/vvoytenk/CLionProjects/fractol/fractol.h
+

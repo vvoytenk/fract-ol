@@ -1,6 +1,18 @@
 cmake_minimum_required(VERSION 3.9)
-project(fractol C)
+project(fractol)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(fractol main.c)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror")
+
+include_directories(inc libft/includes minilibx)
+
+link_directories(libft minilibx)
+
+
+set(SOURCE_FILES main.c fractol.h fractol.c)
+
+add_executable(fractol ${SOURCE_FILES})
+
+
+target_link_libraries(fractol -lft -lmlx "-framework OpenGL" "-framework AppKit")
