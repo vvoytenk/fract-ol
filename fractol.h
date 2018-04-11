@@ -20,7 +20,37 @@
 # include <math.h>
 # include <stdio.h>
 
+
+#  define WID 1600
+#  define HEI 1200
+
+
+typedef struct  s_fract
+{
+    void        *mlx;
+    void        *win;
+    double      re;
+    double      im;
+}               t_fract;
+
+typedef struct s_complex
+{
+    double x,y;
+}               t_complex;
+
 void    fractol(char *file);
-int     error(int code);
+int     error();
+void	create_window(t_fract *fract);
+void    julia();
+void    mandel();
+
+
+void juliaSet(int width,int height,t_complex c,double radius,int n, t_fract *fract);
+t_complex mapPoint(int width,int height,double radius,int x,int y);
+double mod(t_complex a);
+t_complex sqr(t_complex a);
+t_complex add(t_complex a,t_complex b);
+
+
 
 #endif

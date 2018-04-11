@@ -123,6 +123,33 @@ fractol/fast:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/build
 .PHONY : fractol/fast
 
+create_window.o: create_window.c.o
+
+.PHONY : create_window.o
+
+# target to build an object file
+create_window.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/create_window.c.o
+.PHONY : create_window.c.o
+
+create_window.i: create_window.c.i
+
+.PHONY : create_window.i
+
+# target to preprocess a source file
+create_window.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/create_window.c.i
+.PHONY : create_window.c.i
+
+create_window.s: create_window.c.s
+
+.PHONY : create_window.s
+
+# target to generate assembly for a file
+create_window.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/create_window.c.s
+.PHONY : create_window.c.s
+
 fractol.o: fractol.c.o
 
 .PHONY : fractol.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fractol"
+	@echo "... create_window.o"
+	@echo "... create_window.i"
+	@echo "... create_window.s"
 	@echo "... fractol.o"
 	@echo "... fractol.i"
 	@echo "... fractol.s"

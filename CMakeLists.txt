@@ -3,14 +3,14 @@ project(fractol)
 
 set(CMAKE_C_STANDARD 99)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror")
+#set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wextra -Werror")
 
 include_directories(inc libft/includes minilibx)
 
 link_directories(libft minilibx)
 
 
-set(SOURCE_FILES main.c fractol.h fractol.c)
+set(SOURCE_FILES main.c fractol.h fractol.c create_window.c)
 
 add_executable(fractol ${SOURCE_FILES})
 

@@ -1,11 +1,8 @@
 #include "fractol.h"
 
-int     error(int code)
+int     error()
 {
-    if (code == 1)
-        ft_putstr("ERROR: you must put ONE arg\n");
-    if (code == 2)
-        ft_putstr("ERROR: choose available fractols:\nJulia\nMandelbrot");
+    ft_putstr("USAGE:\n1 - Julia\n2 - Mandelbrot");
     return (0);
 }
 

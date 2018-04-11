@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/vvoytenk/CLionProjects/fractol/create_window.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/create_window.c.o"
   "/Users/vvoytenk/CLionProjects/fractol/fractol.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/fractol.c.o"
   "/Users/vvoytenk/CLionProjects/fractol/main.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/main.c.o"
   )
