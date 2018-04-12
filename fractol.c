@@ -112,7 +112,7 @@ void    mandel()
                 if ((nRe * nRe + nIm *nIm) > 4)
                     break ;
             }
-            color = i * 1000;
+            color = i * 500;
             mlx_pixel_put(fract.mlx, fract.win, x, y, color);
         }
     }
