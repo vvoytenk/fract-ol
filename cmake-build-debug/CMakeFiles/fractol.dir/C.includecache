@@ -8,7 +8,7 @@
 
 ../minilibx/mlx.h
 
-/Users/vvoytenk/CLionProjects/fractol/create_window.c
+/Users/vvoytenk/CLionProjects/fractol/draw.c
 fractol.h
 /Users/vvoytenk/CLionProjects/fractol/fractol.h
 
@@ -27,6 +27,12 @@ math.h
 -
 stdio.h
 -
+pthread.h
+-
+
+/Users/vvoytenk/CLionProjects/fractol/julia.c
+fractol.h
+/Users/vvoytenk/CLionProjects/fractol/fractol.h
 
 /Users/vvoytenk/CLionProjects/fractol/libft/libft.h
 stdlib.h

@@ -10,9 +10,12 @@ include_directories(inc libft/includes minilibx)
 link_directories(libft minilibx)
 
 
-set(SOURCE_FILES main.c fractol.h fractol.c create_window.c)
+set(SOURCE_FILES main.c fractol.h fractol.c julia.c draw.c)
 
 add_executable(fractol ${SOURCE_FILES})
 
 
 target_link_libraries(fractol -lft -lmlx "-framework OpenGL" "-framework AppKit")
+
+
+#-l mlx -framework OpenGL -framework AppKit

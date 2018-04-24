@@ -123,32 +123,32 @@ fractol/fast:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/build
 .PHONY : fractol/fast
 
-create_window.o: create_window.c.o
+draw.o: draw.c.o
 
-.PHONY : create_window.o
+.PHONY : draw.o
 
 # target to build an object file
-create_window.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/create_window.c.o
-.PHONY : create_window.c.o
+draw.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/draw.c.o
+.PHONY : draw.c.o
 
-create_window.i: create_window.c.i
+draw.i: draw.c.i
 
-.PHONY : create_window.i
+.PHONY : draw.i
 
 # target to preprocess a source file
-create_window.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/create_window.c.i
-.PHONY : create_window.c.i
+draw.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/draw.c.i
+.PHONY : draw.c.i
 
-create_window.s: create_window.c.s
+draw.s: draw.c.s
 
-.PHONY : create_window.s
+.PHONY : draw.s
 
 # target to generate assembly for a file
-create_window.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/create_window.c.s
-.PHONY : create_window.c.s
+draw.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/draw.c.s
+.PHONY : draw.c.s
 
 fractol.o: fractol.c.o
 
@@ -176,6 +176,33 @@ fractol.s: fractol.c.s
 fractol.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/fractol.c.s
 .PHONY : fractol.c.s
+
+julia.o: julia.c.o
+
+.PHONY : julia.o
+
+# target to build an object file
+julia.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.o
+.PHONY : julia.c.o
+
+julia.i: julia.c.i
+
+.PHONY : julia.i
+
+# target to preprocess a source file
+julia.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.i
+.PHONY : julia.c.i
+
+julia.s: julia.c.s
+
+.PHONY : julia.s
+
+# target to generate assembly for a file
+julia.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.s
+.PHONY : julia.c.s
 
 main.o: main.c.o
 
@@ -213,12 +240,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fractol"
-	@echo "... create_window.o"
-	@echo "... create_window.i"
-	@echo "... create_window.s"
+	@echo "... draw.o"
+	@echo "... draw.i"
+	@echo "... draw.s"
 	@echo "... fractol.o"
 	@echo "... fractol.i"
 	@echo "... fractol.s"
+	@echo "... julia.o"
+	@echo "... julia.i"
+	@echo "... julia.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

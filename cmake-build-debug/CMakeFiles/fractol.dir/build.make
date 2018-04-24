@@ -105,45 +105,71 @@ CMakeFiles/fractol.dir/fractol.c.o.provides: CMakeFiles/fractol.dir/fractol.c.o.
 CMakeFiles/fractol.dir/fractol.c.o.provides.build: CMakeFiles/fractol.dir/fractol.c.o
 
 
-CMakeFiles/fractol.dir/create_window.c.o: CMakeFiles/fractol.dir/flags.make
-CMakeFiles/fractol.dir/create_window.c.o: ../create_window.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fractol.dir/create_window.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/create_window.c.o   -c /Users/vvoytenk/CLionProjects/fractol/create_window.c
+CMakeFiles/fractol.dir/julia.c.o: CMakeFiles/fractol.dir/flags.make
+CMakeFiles/fractol.dir/julia.c.o: ../julia.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fractol.dir/julia.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/julia.c.o   -c /Users/vvoytenk/CLionProjects/fractol/julia.c
 
-CMakeFiles/fractol.dir/create_window.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/create_window.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vvoytenk/CLionProjects/fractol/create_window.c > CMakeFiles/fractol.dir/create_window.c.i
+CMakeFiles/fractol.dir/julia.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/julia.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vvoytenk/CLionProjects/fractol/julia.c > CMakeFiles/fractol.dir/julia.c.i
 
-CMakeFiles/fractol.dir/create_window.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/create_window.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vvoytenk/CLionProjects/fractol/create_window.c -o CMakeFiles/fractol.dir/create_window.c.s
+CMakeFiles/fractol.dir/julia.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/julia.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vvoytenk/CLionProjects/fractol/julia.c -o CMakeFiles/fractol.dir/julia.c.s
 
-CMakeFiles/fractol.dir/create_window.c.o.requires:
+CMakeFiles/fractol.dir/julia.c.o.requires:
 
-.PHONY : CMakeFiles/fractol.dir/create_window.c.o.requires
+.PHONY : CMakeFiles/fractol.dir/julia.c.o.requires
 
-CMakeFiles/fractol.dir/create_window.c.o.provides: CMakeFiles/fractol.dir/create_window.c.o.requires
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/create_window.c.o.provides.build
-.PHONY : CMakeFiles/fractol.dir/create_window.c.o.provides
+CMakeFiles/fractol.dir/julia.c.o.provides: CMakeFiles/fractol.dir/julia.c.o.requires
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.o.provides.build
+.PHONY : CMakeFiles/fractol.dir/julia.c.o.provides
 
-CMakeFiles/fractol.dir/create_window.c.o.provides.build: CMakeFiles/fractol.dir/create_window.c.o
+CMakeFiles/fractol.dir/julia.c.o.provides.build: CMakeFiles/fractol.dir/julia.c.o
+
+
+CMakeFiles/fractol.dir/draw.c.o: CMakeFiles/fractol.dir/flags.make
+CMakeFiles/fractol.dir/draw.c.o: ../draw.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fractol.dir/draw.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/draw.c.o   -c /Users/vvoytenk/CLionProjects/fractol/draw.c
+
+CMakeFiles/fractol.dir/draw.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/draw.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/vvoytenk/CLionProjects/fractol/draw.c > CMakeFiles/fractol.dir/draw.c.i
+
+CMakeFiles/fractol.dir/draw.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/draw.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/vvoytenk/CLionProjects/fractol/draw.c -o CMakeFiles/fractol.dir/draw.c.s
+
+CMakeFiles/fractol.dir/draw.c.o.requires:
+
+.PHONY : CMakeFiles/fractol.dir/draw.c.o.requires
+
+CMakeFiles/fractol.dir/draw.c.o.provides: CMakeFiles/fractol.dir/draw.c.o.requires
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/draw.c.o.provides.build
+.PHONY : CMakeFiles/fractol.dir/draw.c.o.provides
+
+CMakeFiles/fractol.dir/draw.c.o.provides.build: CMakeFiles/fractol.dir/draw.c.o
 
 
 # Object files for target fractol
 fractol_OBJECTS = \
 "CMakeFiles/fractol.dir/main.c.o" \
 "CMakeFiles/fractol.dir/fractol.c.o" \
-"CMakeFiles/fractol.dir/create_window.c.o"
+"CMakeFiles/fractol.dir/julia.c.o" \
+"CMakeFiles/fractol.dir/draw.c.o"
 
 # External object files for target fractol
 fractol_EXTERNAL_OBJECTS =
 
 fractol: CMakeFiles/fractol.dir/main.c.o
 fractol: CMakeFiles/fractol.dir/fractol.c.o
-fractol: CMakeFiles/fractol.dir/create_window.c.o
+fractol: CMakeFiles/fractol.dir/julia.c.o
+fractol: CMakeFiles/fractol.dir/draw.c.o
 fractol: CMakeFiles/fractol.dir/build.make
 fractol: CMakeFiles/fractol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable fractol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable fractol"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fractol.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,7 +179,8 @@ CMakeFiles/fractol.dir/build: fractol
 
 CMakeFiles/fractol.dir/requires: CMakeFiles/fractol.dir/main.c.o.requires
 CMakeFiles/fractol.dir/requires: CMakeFiles/fractol.dir/fractol.c.o.requires
-CMakeFiles/fractol.dir/requires: CMakeFiles/fractol.dir/create_window.c.o.requires
+CMakeFiles/fractol.dir/requires: CMakeFiles/fractol.dir/julia.c.o.requires
+CMakeFiles/fractol.dir/requires: CMakeFiles/fractol.dir/draw.c.o.requires
 
 .PHONY : CMakeFiles/fractol.dir/requires
 

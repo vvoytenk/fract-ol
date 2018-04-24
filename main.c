@@ -8,8 +8,12 @@ int     error()
 
 int     main(int argc, char **argv)
 {
+    t_fractol *f;
+
+    if (!(f = (t_fractol *)malloc(sizeof(t_fractol))))
+        return (0);
     if (argc != 2)
-        return (error(1));
-    fractol(argv[1]);
+        return (error());
+    fractol(argv[1], f);
     return (0);
 }

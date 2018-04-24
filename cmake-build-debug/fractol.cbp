@@ -86,13 +86,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/create_window.c">
+		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/draw.c">
 			<Option target="fractol"/>
 		</Unit>
 		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/fractol.c">
 			<Option target="fractol"/>
 		</Unit>
 		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/fractol.h">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/julia.c">
 			<Option target="fractol"/>
 		</Unit>
 		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/main.c">
