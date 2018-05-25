@@ -95,6 +95,12 @@
 		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/fractol.h">
 			<Option target="fractol"/>
 		</Unit>
+		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/fractols.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/hooks.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/julia.c">
 			<Option target="fractol"/>
 		</Unit>

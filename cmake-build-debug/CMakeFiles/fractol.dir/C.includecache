@@ -30,6 +30,14 @@ stdio.h
 pthread.h
 -
 
+/Users/vvoytenk/CLionProjects/fractol/fractols.c
+fractol.h
+/Users/vvoytenk/CLionProjects/fractol/fractol.h
+
+/Users/vvoytenk/CLionProjects/fractol/hooks.c
+fractol.h
+/Users/vvoytenk/CLionProjects/fractol/fractol.h
+
 /Users/vvoytenk/CLionProjects/fractol/julia.c
 fractol.h
 /Users/vvoytenk/CLionProjects/fractol/fractol.h

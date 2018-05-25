@@ -177,6 +177,60 @@ fractol.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/fractol.c.s
 .PHONY : fractol.c.s
 
+fractols.o: fractols.c.o
+
+.PHONY : fractols.o
+
+# target to build an object file
+fractols.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/fractols.c.o
+.PHONY : fractols.c.o
+
+fractols.i: fractols.c.i
+
+.PHONY : fractols.i
+
+# target to preprocess a source file
+fractols.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/fractols.c.i
+.PHONY : fractols.c.i
+
+fractols.s: fractols.c.s
+
+.PHONY : fractols.s
+
+# target to generate assembly for a file
+fractols.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/fractols.c.s
+.PHONY : fractols.c.s
+
+hooks.o: hooks.c.o
+
+.PHONY : hooks.o
+
+# target to build an object file
+hooks.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/hooks.c.o
+.PHONY : hooks.c.o
+
+hooks.i: hooks.c.i
+
+.PHONY : hooks.i
+
+# target to preprocess a source file
+hooks.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/hooks.c.i
+.PHONY : hooks.c.i
+
+hooks.s: hooks.c.s
+
+.PHONY : hooks.s
+
+# target to generate assembly for a file
+hooks.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/hooks.c.s
+.PHONY : hooks.c.s
+
 julia.o: julia.c.o
 
 .PHONY : julia.o
@@ -246,6 +300,12 @@ help:
 	@echo "... fractol.o"
 	@echo "... fractol.i"
 	@echo "... fractol.s"
+	@echo "... fractols.o"
+	@echo "... fractols.i"
+	@echo "... fractols.s"
+	@echo "... hooks.o"
+	@echo "... hooks.i"
+	@echo "... hooks.s"
 	@echo "... julia.o"
 	@echo "... julia.i"
 	@echo "... julia.s"

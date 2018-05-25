@@ -23,35 +23,24 @@
 
 
 #  define WID 1000
-#  define HEI 800
+#  define HEI 1000
 #  define THREADS 8
+#  define PI 3.14159265359
 
 typedef struct  s_complex
 {
-    double  cRe;
-    double  cIm;
-    double  nRe;
-    double  nIm;
-    double  oRe;
-    double  oIm;
-    double  zoom;
-    double  moveX;
-    double  moveY;
-    double  maxRe;
-    double  maxIm;
-    double  minRe;
-    double  minIm;
-    double  mouse_x;
-    double  mouse_y;
-    double  mouseRe;
-    double  mouseIm
-    ;
-    int     color;
+    double maxRe;
+    double minRe;
+    double maxIm;
+    double minIm;
+    double Re;
+    double Im;
+    double cRe;
+    double cIm;
+    double temp;
+    double scale;
     int     maxIter;
-    int     x;
-    int     y;
-    int     i;
-
+    int flag;
 }               t_complex;
 
 typedef struct	s_image
@@ -61,35 +50,45 @@ typedef struct	s_image
     int			bits_per_pixel;
     int			size_line;
     int			endian;
-   // void        *img;
 }				t_image;
 
 typedef struct  s_fractol
 {
     void        *mlx;
     void        *win;
-    t_complex   j;
+    t_complex   *j;
     t_image     image;
+    int        numF;
 }               t_fractol;
 
-
-typedef struct  s_multi
+union u_rgb
 {
-    int         i;
-    t_fractol   arg[THREADS];
-}               t_multi;
+    unsigned int color;
+    char r;
+    char g;
+    char b;
+    char zero;
+};
 
-void    fractol(char *file, t_fractol *f);
+int    fractol(t_fractol *f);
 int     error();
+int     exitX();
 void    julia(t_fractol *fractol);
-void    multijulia(t_fractol *f);
-void    mandel(t_fractol *fractol);
-t_complex   initial_julia(t_fractol *fractol);
-t_complex     *initial_mandel(t_fractol *f);
+t_complex   initial_julia(t_complex *jul);
 void			create_image(t_fractol *f);
+void			init_image(t_fractol *f);
 void			put_colour2img(t_image *img, double x, double y, int color, t_fractol *f);
-int    mouse_julia(int x, int y, t_fractol *f);
-
+int		mouse_hook(int keycode, int x, int y, t_fractol *f);
+void    zoomout(int x, int y, t_fractol *f);
+void    zoomin(int x, int y, t_fractol *f);
+int		mouse_move(int x, int y, t_fractol *f);
+int validation(char *name, t_fractol *f);
+int     countIter(t_fractol *f);
+int     expose(t_fractol  *f);int     key_hook(int keycode, t_fractol *f);
+t_complex   initial_fractal(t_complex *fract);
+void    mandel(t_fractol *f);
+int     get_color_buddha(int i);
+void    buddha(t_fractol *f);
 
 
 #endif

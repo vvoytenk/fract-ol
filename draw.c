@@ -13,18 +13,22 @@
 #include "fractol.h"
 
 
-void			create_image(t_fractol *f)
+void			init_image(t_fractol *f)
 {
     f->mlx = mlx_init();
     f->win = mlx_new_window(f->mlx, WID, HEI, "Fract'ol");
-    f->image.ptr = mlx_new_image(f->mlx, WID, HEI);
-    f->image.data = mlx_get_data_addr(f->image.ptr,
-			&f->image.bits_per_pixel, &f->image.size_line, &f->image.endian);
 }
 
-void			put_colour2img(t_image *img, double x, double y, int colour, t_fractol *f)
+void            create_image(t_fractol *f)
+{
+    f->image.ptr = mlx_new_image(f->mlx, WID, HEI);
+    f->image.data = mlx_get_data_addr(f->image.ptr,
+                                      &f->image.bits_per_pixel, &f->image.size_line, &f->image.endian);
+}
+
+void			put_colour2img(t_image *img, double x, double y, int color, t_fractol *f)
 {
     if (x < 0 || y < 0 || x >= WID || y >= HEI)
         return ;
-    *(int *)(img->data + ((int)x + (int)y * WID) * 4) = f->j.color;
+    *(int *)(img->data + ((int)x + (int)y * WID) * 4) = color;
 }

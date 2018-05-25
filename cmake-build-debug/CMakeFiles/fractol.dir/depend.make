@@ -11,6 +11,16 @@ CMakeFiles/fractol.dir/fractol.c.o: ../fractol.c
 CMakeFiles/fractol.dir/fractol.c.o: ../fractol.h
 CMakeFiles/fractol.dir/fractol.c.o: ../libft/libft.h
 
+CMakeFiles/fractol.dir/fractols.c.o: ../minilibx/mlx.h
+CMakeFiles/fractol.dir/fractols.c.o: ../fractol.h
+CMakeFiles/fractol.dir/fractols.c.o: ../fractols.c
+CMakeFiles/fractol.dir/fractols.c.o: ../libft/libft.h
+
+CMakeFiles/fractol.dir/hooks.c.o: ../minilibx/mlx.h
+CMakeFiles/fractol.dir/hooks.c.o: ../fractol.h
+CMakeFiles/fractol.dir/hooks.c.o: ../hooks.c
+CMakeFiles/fractol.dir/hooks.c.o: ../libft/libft.h
+
 CMakeFiles/fractol.dir/julia.c.o: ../minilibx/mlx.h
 CMakeFiles/fractol.dir/julia.c.o: ../fractol.h
 CMakeFiles/fractol.dir/julia.c.o: ../julia.c

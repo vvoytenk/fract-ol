@@ -12,18 +12,33 @@
 
 #include "fractol.h"
 
-void    fractol(char *file, t_fractol *f)
+ int    fractol(t_fractol *f)
 {
-    f = (t_fractol *)malloc(sizeof(t_fractol));
     create_image(f);
-    if (file[0] == '1')
+    if (f->numF == 1)
+        julia(f);
+    if (f->numF == 2)
+        mandel(f);
+    if (f->numF == 3)
+        buddha(f);
+     mlx_put_image_to_window(f->mlx, f->win, f->image.ptr, 0, 0);
+     mlx_destroy_image(f->mlx, f->image.ptr);
+    return (0);
+}
+
+int     countIter(t_fractol *f)
+{
+    int i;
+
+    i = 0;
+    while (f->j->Re * f->j->Re + f->j->Im * f->j->Im <= 4)
     {
-        multijulia(f);
-        mlx_hook(f->win, 6, 1L, mouse_julia, f);
-      //  mlx_mouse_hook(f->win, mouse_julia, f);
+        f->j->temp = f->j->Re * f->j->Re - f->j->Im * f->j->Im + f->j->cRe;
+        f->j->Im = 2 * f->j->Re * f->j->Im + f->j->cIm;
+        f->j->Re = f->j->temp;
+        if (i > f->j->maxIter)
+            break;
+        i++;
     }
-//   if (file[0] == '2')
-//        mandel(f);
-    else
-        error();
+    return (i);
 }

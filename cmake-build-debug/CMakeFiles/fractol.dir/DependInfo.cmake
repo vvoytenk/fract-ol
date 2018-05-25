@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/vvoytenk/CLionProjects/fractol/draw.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/draw.c.o"
   "/Users/vvoytenk/CLionProjects/fractol/fractol.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/fractol.c.o"
+  "/Users/vvoytenk/CLionProjects/fractol/fractols.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/fractols.c.o"
+  "/Users/vvoytenk/CLionProjects/fractol/hooks.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/hooks.c.o"
   "/Users/vvoytenk/CLionProjects/fractol/julia.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/julia.c.o"
   "/Users/vvoytenk/CLionProjects/fractol/main.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/main.c.o"
   )

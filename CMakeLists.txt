@@ -10,7 +10,7 @@ include_directories(inc libft/includes minilibx)
 link_directories(libft minilibx)
 
 
-set(SOURCE_FILES main.c fractol.h fractol.c julia.c draw.c)
+set(SOURCE_FILES main.c fractol.h fractol.c julia.c draw.c hooks.c fractols.c)
 
 add_executable(fractol ${SOURCE_FILES})
 
