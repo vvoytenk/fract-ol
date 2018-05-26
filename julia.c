@@ -14,15 +14,13 @@
 
 t_complex   initial_julia(t_complex *jul)
 {
-    jul->minRe = -1.5;
-    jul->minIm = -1.5;
-    jul->maxIm = 1.5;
-    jul->maxRe = 1.5;
     jul->cRe = 0;
     jul->cIm = 0;
     jul->maxIter = 30;
-    jul->scale = 0.25;
+    jul->scale = 5;
     jul->flag = 1;
+    jul->zoomX = 0;
+    jul->zoomY = 0;
     return (*jul);
 }
 
@@ -38,11 +36,12 @@ void    julia(t_fractol *f)
         x = 0;
         while (x < WID)
         {
-            f->j->Re = f->j->minRe + x * (f->j->maxRe - f->j->minRe) / WID;
-            f->j->Im = f->j->maxIm - y * (f->j->maxIm - f->j->minIm) / HEI;
+            f->j->Im = ((y - WID / 2 ) * f->j->scale) / HEI / 2 + f->j->zoomY;
+            f->j->Re = ((x - WID / 2) * f->j->scale) / HEI / 2 + f->j->zoomX;
+
             i = countIter(f);
             if (i < f->j->maxIter)
-                put_colour2img(&(f->image), x, y, get_color_buddha(i) , f);
+                put_colour2img(&(f->image), x, y, i * 1555 , f);
             else
                 put_colour2img(&(f->image), x, y, 0, f);
             x++;

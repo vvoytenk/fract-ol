@@ -14,6 +14,7 @@
 
 int		mouse_hook(int keycode, int x, int y, t_fractol *f)
 {
+    printf("%d %d\n", x, y);
     if (x >= 0 && y >= 0 && x <= WID && y <= HEI)
     {
         if (keycode == 4)
@@ -27,52 +28,31 @@ int		mouse_hook(int keycode, int x, int y, t_fractol *f)
 
 void    zoomin(int x, int y, t_fractol *f)
 {
-    //double mouseshifty;
-    f->j->cIm = f->j->maxIm - y * (f->j->maxIm - f->j->minIm) / HEI;
-    f->j->cRe = f->j->minRe + x * (f->j->maxRe - f->j->minRe) / WID;
-    if (f->j->cRe < 0)
-        f->j->maxRe += f->j->scale;
-    else if (f->j->cRe >= 0)
-        f->j->minRe -= f->j->scale;
-    if (f->j->cIm < 0)
-        f->j->maxIm += f->j->scale;
-    else if (f->j->cIm >= 0)
-        f->j->minIm -= f->j->scale;
-//    mouseshifty = ((y - HEI) / WID) * fr->zoom;
-//
-//    fr->shifty += fr->mouseshifty;
-//    fr->mouseshiftx = ((x - 400.) / 800.) * fr->zoom;
-//    fr->shiftx += fr->mouseshiftx;
-//    fr->zoom /= 1.05;
-//    fr->shiftx -= ((x - 400.) / 800.) * fr->zoom;
-//    fr->shifty -= ((y - 400.) / 800.) * fr->zoom;
+
+    f->j->scale *= 1.5;
+    f->j->zoomX += ((x - HEI / 1.5) / WID / 2) / f->j->scale;
+    f->j->zoomY += ((y - WID / 2) / HEI / 1.5) / f->j->scale;
 }
 void    zoomout(int x, int y, t_fractol *f)
 {
-    f->j->cIm = f->j->maxIm - y * (f->j->maxIm - f->j->minIm) / HEI;
-    f->j->cRe = f->j->minRe + x * (f->j->maxRe - f->j->minRe) / WID;
-    if (f->j->cRe < 0)
-        f->j->maxRe -= f->j->scale;
-    else if ( f->j->cRe >= 0)
-        f->j->minRe += f->j->scale;
-    if (f->j->cIm < 0)
-        f->j->maxIm -= f->j->scale;
-    else if (f->j->cIm >= 0)
-        f->j->minIm += f->j->scale;
+
+    f->j->scale *= 0.9;
+    f->j->zoomX += ((x - HEI / 1.5) / WID / 2) / f->j->scale;
+    f->j->zoomY += ((y - WID/ 2 ) / HEI / 1.5) / f->j->scale;
 }
 
 int		mouse_move(int x, int y, t_fractol *f)
 {
     if (f->j->flag)
     {
-        f->j->cIm = f->j->maxIm - y * (f->j->maxIm - f->j->minIm) / HEI;
-        f->j->cRe = f->j->minRe + x * (f->j->maxRe - f->j->minRe) / WID;
+        f->j->cIm = ((double)x - WID / 2) / WID + 0.7;
+        f->j->cRe = ((double)y - HEI / 2) / HEI + 0.2;
         expose(f);
     }
     return (0);
 }
 
-int     key_hook(int keycode, t_fractol *f)
+int     key_hook(int keycode)
 {
     if (keycode == 53)
         exitX();

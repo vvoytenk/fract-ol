@@ -29,16 +29,15 @@
 
 typedef struct  s_complex
 {
-    double maxRe;
-    double minRe;
-    double maxIm;
-    double minIm;
     double Re;
     double Im;
     double cRe;
     double cIm;
     double temp;
     double scale;
+    double zoomX;
+    double zoomY;
+    int     color;
     int     maxIter;
     int flag;
 }               t_complex;
@@ -64,10 +63,11 @@ typedef struct  s_fractol
 union u_rgb
 {
     unsigned int color;
-    char r;
-    char g;
-    char b;
-    char zero;
+//    char r;
+//    char g;
+//    char b;
+//    char zero;
+    char rgb[4];
 };
 
 int    fractol(t_fractol *f);
@@ -84,10 +84,11 @@ void    zoomin(int x, int y, t_fractol *f);
 int		mouse_move(int x, int y, t_fractol *f);
 int validation(char *name, t_fractol *f);
 int     countIter(t_fractol *f);
-int     expose(t_fractol  *f);int     key_hook(int keycode, t_fractol *f);
+int     expose(t_fractol  *f);
+int     key_hook(int keycode);
 t_complex   initial_fractal(t_complex *fract);
 void    mandel(t_fractol *f);
-int     get_color_buddha(int i);
+int     get_color(int i, t_fractol *f, int var);
 void    buddha(t_fractol *f);
 
 
