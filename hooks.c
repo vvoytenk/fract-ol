@@ -14,7 +14,6 @@
 
 int		mouse_hook(int keycode, int x, int y, t_fractol *f)
 {
-    printf("%d %d\n", x, y);
     if (x >= 0 && y >= 0 && x <= WID && y <= HEI)
     {
         if (keycode == 4)
@@ -28,17 +27,15 @@ int		mouse_hook(int keycode, int x, int y, t_fractol *f)
 
 void    zoomin(int x, int y, t_fractol *f)
 {
-
     f->j->scale *= 1.5;
-    f->j->zoomX += ((x - HEI / 1.5) / WID / 2) / f->j->scale;
-    f->j->zoomY += ((y - WID / 2) / HEI / 1.5) / f->j->scale;
+    f->j->zoomX += ((x - HEI / 1.5) / WID / 1.5) * f->j->scale;
+    f->j->zoomY += ((y - WID / 1.5) / HEI / 1.5) * f->j->scale;
 }
 void    zoomout(int x, int y, t_fractol *f)
 {
-
     f->j->scale *= 0.9;
-    f->j->zoomX += ((x - HEI / 1.5) / WID / 2) / f->j->scale;
-    f->j->zoomY += ((y - WID/ 2 ) / HEI / 1.5) / f->j->scale;
+    f->j->zoomX += ((x - HEI / 1.5) / WID / 1.5) * f->j->scale;
+    f->j->zoomY += ((y - WID/ 1.5 ) / HEI / 1.5) * f->j->scale;
 }
 
 int		mouse_move(int x, int y, t_fractol *f)

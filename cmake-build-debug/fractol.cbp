@@ -107,6 +107,9 @@
 		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/main.c">
 			<Option target="fractol"/>
 		</Unit>
+		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/validation.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/vvoytenk/CLionProjects/fractol/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

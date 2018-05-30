@@ -31,3 +31,8 @@ CMakeFiles/fractol.dir/main.c.o
  /Users/vvoytenk/CLionProjects/fractol/fractol.h
  /Users/vvoytenk/CLionProjects/fractol/libft/libft.h
  /Users/vvoytenk/CLionProjects/fractol/main.c
+CMakeFiles/fractol.dir/validation.c.o
+ ../minilibx/mlx.h
+ /Users/vvoytenk/CLionProjects/fractol/fractol.h
+ /Users/vvoytenk/CLionProjects/fractol/libft/libft.h
+ /Users/vvoytenk/CLionProjects/fractol/validation.c

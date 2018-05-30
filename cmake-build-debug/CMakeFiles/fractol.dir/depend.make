@@ -31,3 +31,8 @@ CMakeFiles/fractol.dir/main.c.o: ../fractol.h
 CMakeFiles/fractol.dir/main.c.o: ../libft/libft.h
 CMakeFiles/fractol.dir/main.c.o: ../main.c
 
+CMakeFiles/fractol.dir/validation.c.o: ../minilibx/mlx.h
+CMakeFiles/fractol.dir/validation.c.o: ../fractol.h
+CMakeFiles/fractol.dir/validation.c.o: ../libft/libft.h
+CMakeFiles/fractol.dir/validation.c.o: ../validation.c
+

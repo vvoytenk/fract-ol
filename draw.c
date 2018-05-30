@@ -32,3 +32,14 @@ void			put_colour2img(t_image *img, double x, double y, int color, t_fractol *f)
         return ;
     *(int *)(img->data + ((int)x + (int)y * WID) * 4) = color;
 }
+
+int     get_color(int i, t_fractol *f, int delta)
+{
+    union u_rgb color;
+
+    color.rgb[0] = f->j->color * cos(i) / delta * 1555;
+    color.rgb[1] = f->j->color / cos(i) / delta * 1555;
+    color.rgb[2] = f->j->color * sin(i * 2) / delta *1555;
+    color.rgb[3] = 0;
+    return (color.color);
+}

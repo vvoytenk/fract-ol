@@ -24,8 +24,6 @@
 
 #  define WID 1000
 #  define HEI 1000
-#  define THREADS 8
-#  define PI 3.14159265359
 
 typedef struct  s_complex
 {
@@ -63,15 +61,11 @@ typedef struct  s_fractol
 union u_rgb
 {
     unsigned int color;
-//    char r;
-//    char g;
-//    char b;
-//    char zero;
     char rgb[4];
 };
 
 int    fractol(t_fractol *f);
-int     error();
+int     usage(void);
 int     exitX();
 void    julia(t_fractol *fractol);
 t_complex   initial_julia(t_complex *jul);
@@ -90,6 +84,16 @@ t_complex   initial_fractal(t_complex *fract);
 void    mandel(t_fractol *f);
 int     get_color(int i, t_fractol *f, int var);
 void    buddha(t_fractol *f);
-
+void    newton(t_fractol *f);
+int     countNewton(t_fractol *f);
+void    ship(t_fractol *f);
+int     countShip(t_fractol *f);
+int     countBio(t_fractol *f);
+void    biomorph(t_fractol *f);
+void tricorn(t_fractol *f);
+int     countTricorn(t_fractol *f);
+void   fractheart(t_fractol *f);
+int    countHeart(t_fractol *f);
+int valid(char *name , t_fractol *f);
 
 #endif

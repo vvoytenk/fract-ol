@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/vvoytenk/CLionProjects/fractol/hooks.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/hooks.c.o"
   "/Users/vvoytenk/CLionProjects/fractol/julia.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/julia.c.o"
   "/Users/vvoytenk/CLionProjects/fractol/main.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/main.c.o"
+  "/Users/vvoytenk/CLionProjects/fractol/validation.c" "/Users/vvoytenk/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/validation.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

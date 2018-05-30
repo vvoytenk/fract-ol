@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fractol.dir/draw.c.o"
   "CMakeFiles/fractol.dir/hooks.c.o"
   "CMakeFiles/fractol.dir/fractols.c.o"
+  "CMakeFiles/fractol.dir/validation.c.o"
   "fractol.pdb"
   "fractol"
 )
